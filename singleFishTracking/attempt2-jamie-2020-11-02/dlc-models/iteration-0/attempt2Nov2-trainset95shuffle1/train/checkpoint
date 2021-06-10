@@ -1,0 +1,5 @@
+model_checkpoint_path: "/home/jamie/attempt2-jamie-2020-11-02/dlc-models/iteration-0/attempt2Nov2-trainset95shuffle1/train/snapshot-200000"
+all_model_checkpoint_paths: "/home/jamie/attempt2-jamie-2020-11-02/dlc-models/iteration-0/attempt2Nov2-trainset95shuffle1/train/snapshot-50000"
+all_model_checkpoint_paths: "/home/jamie/attempt2-jamie-2020-11-02/dlc-models/iteration-0/attempt2Nov2-trainset95shuffle1/train/snapshot-100000"
+all_model_checkpoint_paths: "/home/jamie/attempt2-jamie-2020-11-02/dlc-models/iteration-0/attempt2Nov2-trainset95shuffle1/train/snapshot-150000"
+all_model_checkpoint_paths: "/home/jamie/attempt2-jamie-2020-11-02/dlc-models/iteration-0/attempt2Nov2-trainset95shuffle1/train/snapshot-200000"

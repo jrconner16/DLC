@@ -1,0 +1,87 @@
+    # Project definitions (do not edit)
+Task: multiFishTest1
+scorer: jamie
+date: Jun10
+multianimalproject: true
+
+    # Project path (change when moving around)
+project_path: /home/jamie/multiFishTest1-jamie-2021-06-10
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /home/jamie/multiFishTest1-jamie-2021-06-10/videos/WT_00590.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/multiFish/WT_00595.mov:
+    crop: 0, 1280, 0, 864
+individuals:
+- fish1
+- fish2
+- fish3
+- fish4
+- fish5
+- fish6
+- fish7
+- fish8
+- fish9
+- fish10
+- fish11
+- fish12
+- fish13
+- fish14
+- fish15
+- fish16
+uniquebodyparts: []
+multianimalbodyparts:
+- eyes
+- swimbladder
+- midtail
+- endtail
+skeleton:
+- - eyes
+  - swimbladder
+- - swimbladder
+  - midtail
+- - midtail
+  - endtail
+- - eyes
+  - endtail
+- - eyes
+  - midtail
+- - swimbladder
+- - endtail
+bodyparts: MULTI!
+start: 0
+stop: 1
+numframes2pick: 20
+identidy: False
+
+    # Plotting configuration
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: plasma
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: multi-animal-imgaug
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+croppedtraining: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true

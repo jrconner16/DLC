@@ -1,0 +1,84 @@
+# Project definitions (do not edit)
+Task: attempt2
+scorer: jamie
+date: Nov2
+
+# Project path (change when moving around)
+project_path: /home/jamie/attempt2-jamie-2020-11-02
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /home/jamie/Videos/06-Aug-20_00075_WT_10X.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/Videos/06-Sep-20_00166_sap_affected.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/Videos/06-Sep-20_00144_sap_unaffected.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/Videos/06-Sep-20_00172_sap_unaffected.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/Videos/06-Sep-20_00146_sap_unaffected.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/Videos/06-Sep-20_00173_sap_unaffected.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/Videos/06-Sep-20_00148_sap_unaffected.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/Videos/16-Aug-20_00096_WT.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/Videos/06-Sep-20_00165_sap_affected.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/Videos/16-Aug-20_00110_WT_lower_mag.mov:
+    crop: 0, 512, 0, 512
+  /home/jamie/attempt2-jamie-2020-11-02/videos/v00075.avi:
+    crop: 0, 289, 0, 377
+  /home/jamie/attempt2-jamie-2020-11-02/videos/v00165.avi:
+    crop: 0, 385, 0, 307
+  /home/jamie/attempt2-jamie-2020-11-02/videos/v00172.avi:
+    crop: 0, 292, 0, 360
+  /home/jamie/attempt2-jamie-2020-11-02/videos/201115_00214.avi:
+    crop: 0, 272, 0, 237
+  /home/jamie/attempt2-jamie-2020-11-02/videos/201115_00217.avi:
+    crop: 0, 254, 0, 198
+bodyparts:
+- eyes
+- swimbladder
+- midtail
+- endtail
+start: 0
+stop: 1
+numframes2pick: 20
+
+# Plotting configuration
+skeleton:
+- eyes
+- swimbladder
+- midtail
+- endtail
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 4
+alphavalue: 0.7
+colormap: jet
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+resnet:
+snapshotindex: -1
+batch_size: 8
+
+# Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+#if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+# Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+default_net_type: resnet_50
+default_augmenter: default

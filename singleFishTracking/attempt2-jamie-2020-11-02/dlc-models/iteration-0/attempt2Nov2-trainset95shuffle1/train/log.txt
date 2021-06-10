@@ -1,0 +1,726 @@
+2020-11-17 12:28:54 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['eyes', 'swimbladder', 'midtail', 'endtail'],
+ 'batch_size': 1,
+ 'bottomheight': 400,
+ 'crop': True,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/attempt2_jamie95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/home/jamie/anaconda3/envs/DLC-GPU/lib/python3.7/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'leftwidth': 400,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/Documentation_data-attempt2_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'minsize': 100,
+ 'mirror': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'pos_dist_thresh': 17,
+ 'project_path': '/home/jamie/attempt2-jamie-2020-11-02',
+ 'regularize': False,
+ 'rightwidth': 400,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/home/jamie/attempt2-jamie-2020-11-02/dlc-models/iteration-0/attempt2Nov2-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'topheight': 400,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2020-11-17 12:34:20 iteration: 500 loss: 0.0325 lr: 0.005
+2020-11-17 12:37:58 iteration: 1000 loss: 0.0160 lr: 0.005
+2020-11-17 12:41:16 iteration: 1500 loss: 0.0136 lr: 0.005
+2020-11-17 12:44:12 iteration: 2000 loss: 0.0110 lr: 0.005
+2020-11-17 12:47:07 iteration: 2500 loss: 0.0100 lr: 0.005
+2020-11-17 12:49:48 iteration: 3000 loss: 0.0091 lr: 0.005
+2020-11-17 12:52:21 iteration: 3500 loss: 0.0082 lr: 0.005
+2020-11-17 12:54:51 iteration: 4000 loss: 0.0078 lr: 0.005
+2020-11-17 12:57:13 iteration: 4500 loss: 0.0075 lr: 0.005
+2020-11-17 12:59:28 iteration: 5000 loss: 0.0068 lr: 0.005
+2020-11-17 13:01:30 iteration: 5500 loss: 0.0064 lr: 0.005
+2020-11-17 13:03:41 iteration: 6000 loss: 0.0061 lr: 0.005
+2020-11-17 13:05:39 iteration: 6500 loss: 0.0063 lr: 0.005
+2020-11-17 13:07:42 iteration: 7000 loss: 0.0058 lr: 0.005
+2020-11-17 13:09:51 iteration: 7500 loss: 0.0057 lr: 0.005
+2020-11-17 13:11:49 iteration: 8000 loss: 0.0055 lr: 0.005
+2020-11-17 13:13:49 iteration: 8500 loss: 0.0055 lr: 0.005
+2020-11-17 13:15:55 iteration: 9000 loss: 0.0053 lr: 0.005
+2020-11-17 13:17:51 iteration: 9500 loss: 0.0052 lr: 0.005
+2020-11-17 13:19:46 iteration: 10000 loss: 0.0050 lr: 0.005
+2020-11-17 13:21:44 iteration: 10500 loss: 0.0081 lr: 0.02
+2020-11-17 13:23:32 iteration: 11000 loss: 0.0077 lr: 0.02
+2020-11-17 13:25:21 iteration: 11500 loss: 0.0067 lr: 0.02
+2020-11-17 13:27:02 iteration: 12000 loss: 0.0059 lr: 0.02
+2020-11-17 13:28:46 iteration: 12500 loss: 0.0060 lr: 0.02
+2020-11-17 13:30:35 iteration: 13000 loss: 0.0056 lr: 0.02
+2020-11-17 13:32:22 iteration: 13500 loss: 0.0053 lr: 0.02
+2020-11-17 13:34:04 iteration: 14000 loss: 0.0052 lr: 0.02
+2020-11-17 13:35:54 iteration: 14500 loss: 0.0048 lr: 0.02
+2020-11-17 13:37:42 iteration: 15000 loss: 0.0046 lr: 0.02
+2020-11-17 13:39:31 iteration: 15500 loss: 0.0050 lr: 0.02
+2020-11-17 13:41:12 iteration: 16000 loss: 0.0046 lr: 0.02
+2020-11-17 13:42:54 iteration: 16500 loss: 0.0045 lr: 0.02
+2020-11-17 13:44:28 iteration: 17000 loss: 0.0044 lr: 0.02
+2020-11-17 13:46:10 iteration: 17500 loss: 0.0045 lr: 0.02
+2020-11-17 13:47:55 iteration: 18000 loss: 0.0042 lr: 0.02
+2020-11-17 13:49:43 iteration: 18500 loss: 0.0040 lr: 0.02
+2020-11-17 13:51:22 iteration: 19000 loss: 0.0042 lr: 0.02
+2020-11-17 13:53:04 iteration: 19500 loss: 0.0043 lr: 0.02
+2020-11-17 13:54:43 iteration: 20000 loss: 0.0042 lr: 0.02
+2020-11-17 13:56:26 iteration: 20500 loss: 0.0040 lr: 0.02
+2020-11-17 13:58:03 iteration: 21000 loss: 0.0040 lr: 0.02
+2020-11-17 13:59:40 iteration: 21500 loss: 0.0039 lr: 0.02
+2020-11-17 14:01:17 iteration: 22000 loss: 0.0040 lr: 0.02
+2020-11-17 14:03:04 iteration: 22500 loss: 0.0038 lr: 0.02
+2020-11-17 14:04:36 iteration: 23000 loss: 0.0037 lr: 0.02
+2020-11-17 14:06:08 iteration: 23500 loss: 0.0037 lr: 0.02
+2020-11-17 14:07:40 iteration: 24000 loss: 0.0035 lr: 0.02
+2020-11-17 14:09:10 iteration: 24500 loss: 0.0034 lr: 0.02
+2020-11-17 14:10:38 iteration: 25000 loss: 0.0036 lr: 0.02
+2020-11-17 14:12:09 iteration: 25500 loss: 0.0032 lr: 0.02
+2020-11-17 14:13:38 iteration: 26000 loss: 0.0034 lr: 0.02
+2020-11-17 14:15:00 iteration: 26500 loss: 0.0034 lr: 0.02
+2020-11-17 14:16:29 iteration: 27000 loss: 0.0035 lr: 0.02
+2020-11-17 14:17:59 iteration: 27500 loss: 0.0034 lr: 0.02
+2020-11-17 14:19:28 iteration: 28000 loss: 0.0033 lr: 0.02
+2020-11-17 14:20:54 iteration: 28500 loss: 0.0033 lr: 0.02
+2020-11-17 14:22:22 iteration: 29000 loss: 0.0032 lr: 0.02
+2020-11-17 14:23:49 iteration: 29500 loss: 0.0034 lr: 0.02
+2020-11-17 14:25:19 iteration: 30000 loss: 0.0033 lr: 0.02
+2020-11-17 14:26:49 iteration: 30500 loss: 0.0033 lr: 0.02
+2020-11-17 14:28:15 iteration: 31000 loss: 0.0032 lr: 0.02
+2020-11-17 14:29:44 iteration: 31500 loss: 0.0033 lr: 0.02
+2020-11-17 14:31:10 iteration: 32000 loss: 0.0033 lr: 0.02
+2020-11-17 14:32:37 iteration: 32500 loss: 0.0031 lr: 0.02
+2020-11-17 14:34:06 iteration: 33000 loss: 0.0029 lr: 0.02
+2020-11-17 14:35:35 iteration: 33500 loss: 0.0032 lr: 0.02
+2020-11-17 14:37:03 iteration: 34000 loss: 0.0029 lr: 0.02
+2020-11-17 14:38:27 iteration: 34500 loss: 0.0031 lr: 0.02
+2020-11-17 14:39:52 iteration: 35000 loss: 0.0030 lr: 0.02
+2020-11-17 14:41:19 iteration: 35500 loss: 0.0028 lr: 0.02
+2020-11-17 14:42:37 iteration: 36000 loss: 0.0028 lr: 0.02
+2020-11-17 14:44:02 iteration: 36500 loss: 0.0029 lr: 0.02
+2020-11-17 14:45:28 iteration: 37000 loss: 0.0030 lr: 0.02
+2020-11-17 14:46:56 iteration: 37500 loss: 0.0030 lr: 0.02
+2020-11-17 14:48:21 iteration: 38000 loss: 0.0028 lr: 0.02
+2020-11-17 14:49:44 iteration: 38500 loss: 0.0031 lr: 0.02
+2020-11-17 14:51:12 iteration: 39000 loss: 0.0028 lr: 0.02
+2020-11-17 14:52:33 iteration: 39500 loss: 0.0031 lr: 0.02
+2020-11-17 14:53:56 iteration: 40000 loss: 0.0030 lr: 0.02
+2020-11-17 14:55:14 iteration: 40500 loss: 0.0029 lr: 0.02
+2020-11-17 14:56:34 iteration: 41000 loss: 0.0029 lr: 0.02
+2020-11-17 14:57:56 iteration: 41500 loss: 0.0026 lr: 0.02
+2020-11-17 14:59:19 iteration: 42000 loss: 0.0028 lr: 0.02
+2020-11-17 15:00:44 iteration: 42500 loss: 0.0027 lr: 0.02
+2020-11-17 15:02:06 iteration: 43000 loss: 0.0027 lr: 0.02
+2020-11-17 15:03:29 iteration: 43500 loss: 0.0029 lr: 0.02
+2020-11-17 15:04:52 iteration: 44000 loss: 0.0028 lr: 0.02
+2020-11-17 15:06:15 iteration: 44500 loss: 0.0026 lr: 0.02
+2020-11-17 15:07:37 iteration: 45000 loss: 0.0026 lr: 0.02
+2020-11-17 15:08:55 iteration: 45500 loss: 0.0027 lr: 0.02
+2020-11-17 15:10:19 iteration: 46000 loss: 0.0027 lr: 0.02
+2020-11-17 15:11:38 iteration: 46500 loss: 0.0027 lr: 0.02
+2020-11-17 15:12:57 iteration: 47000 loss: 0.0027 lr: 0.02
+2020-11-17 15:14:17 iteration: 47500 loss: 0.0026 lr: 0.02
+2020-11-17 15:15:35 iteration: 48000 loss: 0.0027 lr: 0.02
+2020-11-17 15:16:53 iteration: 48500 loss: 0.0026 lr: 0.02
+2020-11-17 15:18:12 iteration: 49000 loss: 0.0026 lr: 0.02
+2020-11-17 15:19:37 iteration: 49500 loss: 0.0030 lr: 0.02
+2020-11-17 15:20:53 iteration: 50000 loss: 0.0028 lr: 0.02
+2020-11-17 15:22:16 iteration: 50500 loss: 0.0025 lr: 0.02
+2020-11-17 15:23:40 iteration: 51000 loss: 0.0026 lr: 0.02
+2020-11-17 15:24:56 iteration: 51500 loss: 0.0026 lr: 0.02
+2020-11-17 15:26:11 iteration: 52000 loss: 0.0027 lr: 0.02
+2020-11-17 15:27:28 iteration: 52500 loss: 0.0025 lr: 0.02
+2020-11-17 15:28:48 iteration: 53000 loss: 0.0025 lr: 0.02
+2020-11-17 15:30:05 iteration: 53500 loss: 0.0024 lr: 0.02
+2020-11-17 15:31:20 iteration: 54000 loss: 0.0025 lr: 0.02
+2020-11-17 15:32:42 iteration: 54500 loss: 0.0025 lr: 0.02
+2020-11-17 15:34:00 iteration: 55000 loss: 0.0025 lr: 0.02
+2020-11-17 15:35:20 iteration: 55500 loss: 0.0025 lr: 0.02
+2020-11-17 15:36:39 iteration: 56000 loss: 0.0026 lr: 0.02
+2020-11-17 15:37:53 iteration: 56500 loss: 0.0025 lr: 0.02
+2020-11-17 15:39:13 iteration: 57000 loss: 0.0024 lr: 0.02
+2020-11-17 15:40:35 iteration: 57500 loss: 0.0024 lr: 0.02
+2020-11-17 15:41:51 iteration: 58000 loss: 0.0025 lr: 0.02
+2020-11-17 15:43:08 iteration: 58500 loss: 0.0024 lr: 0.02
+2020-11-17 15:44:27 iteration: 59000 loss: 0.0024 lr: 0.02
+2020-11-17 15:45:42 iteration: 59500 loss: 0.0024 lr: 0.02
+2020-11-17 15:47:00 iteration: 60000 loss: 0.0024 lr: 0.02
+2020-11-17 15:48:13 iteration: 60500 loss: 0.0023 lr: 0.02
+2020-11-17 15:49:26 iteration: 61000 loss: 0.0022 lr: 0.02
+2020-11-17 15:50:42 iteration: 61500 loss: 0.0024 lr: 0.02
+2020-11-17 15:51:55 iteration: 62000 loss: 0.0024 lr: 0.02
+2020-11-17 15:53:11 iteration: 62500 loss: 0.0024 lr: 0.02
+2020-11-17 15:54:30 iteration: 63000 loss: 0.0022 lr: 0.02
+2020-11-17 15:55:47 iteration: 63500 loss: 0.0023 lr: 0.02
+2020-11-17 15:57:01 iteration: 64000 loss: 0.0024 lr: 0.02
+2020-11-17 15:58:17 iteration: 64500 loss: 0.0022 lr: 0.02
+2020-11-17 15:59:31 iteration: 65000 loss: 0.0022 lr: 0.02
+2020-11-17 16:00:48 iteration: 65500 loss: 0.0023 lr: 0.02
+2020-11-17 16:02:08 iteration: 66000 loss: 0.0023 lr: 0.02
+2020-11-17 16:03:28 iteration: 66500 loss: 0.0024 lr: 0.02
+2020-11-17 16:04:40 iteration: 67000 loss: 0.0022 lr: 0.02
+2020-11-17 16:05:58 iteration: 67500 loss: 0.0021 lr: 0.02
+2020-11-17 16:07:11 iteration: 68000 loss: 0.0021 lr: 0.02
+2020-11-17 16:08:29 iteration: 68500 loss: 0.0023 lr: 0.02
+2020-11-17 16:09:48 iteration: 69000 loss: 0.0022 lr: 0.02
+2020-11-17 16:11:05 iteration: 69500 loss: 0.0021 lr: 0.02
+2020-11-17 16:12:19 iteration: 70000 loss: 0.0024 lr: 0.02
+2020-11-17 16:13:35 iteration: 70500 loss: 0.0024 lr: 0.02
+2020-11-17 16:14:46 iteration: 71000 loss: 0.0023 lr: 0.02
+2020-11-17 16:15:55 iteration: 71500 loss: 0.0023 lr: 0.02
+2020-11-17 16:17:08 iteration: 72000 loss: 0.0022 lr: 0.02
+2020-11-17 16:18:18 iteration: 72500 loss: 0.0022 lr: 0.02
+2020-11-17 16:19:27 iteration: 73000 loss: 0.0021 lr: 0.02
+2020-11-17 16:20:45 iteration: 73500 loss: 0.0021 lr: 0.02
+2020-11-17 16:21:58 iteration: 74000 loss: 0.0022 lr: 0.02
+2020-11-17 16:23:09 iteration: 74500 loss: 0.0022 lr: 0.02
+2020-11-17 16:24:23 iteration: 75000 loss: 0.0021 lr: 0.02
+2020-11-17 16:25:41 iteration: 75500 loss: 0.0021 lr: 0.02
+2020-11-17 16:26:53 iteration: 76000 loss: 0.0020 lr: 0.02
+2020-11-17 16:28:06 iteration: 76500 loss: 0.0023 lr: 0.02
+2020-11-17 16:29:21 iteration: 77000 loss: 0.0022 lr: 0.02
+2020-11-17 16:30:35 iteration: 77500 loss: 0.0020 lr: 0.02
+2020-11-17 16:31:45 iteration: 78000 loss: 0.0022 lr: 0.02
+2020-11-17 16:32:58 iteration: 78500 loss: 0.0020 lr: 0.02
+2020-11-17 16:34:07 iteration: 79000 loss: 0.0021 lr: 0.02
+2020-11-17 16:35:23 iteration: 79500 loss: 0.0022 lr: 0.02
+2020-11-17 16:36:32 iteration: 80000 loss: 0.0020 lr: 0.02
+2020-11-17 16:37:45 iteration: 80500 loss: 0.0021 lr: 0.02
+2020-11-17 16:38:56 iteration: 81000 loss: 0.0020 lr: 0.02
+2020-11-17 16:40:12 iteration: 81500 loss: 0.0021 lr: 0.02
+2020-11-17 16:41:26 iteration: 82000 loss: 0.0021 lr: 0.02
+2020-11-17 16:42:37 iteration: 82500 loss: 0.0020 lr: 0.02
+2020-11-17 16:43:46 iteration: 83000 loss: 0.0021 lr: 0.02
+2020-11-17 16:44:59 iteration: 83500 loss: 0.0020 lr: 0.02
+2020-11-17 16:46:11 iteration: 84000 loss: 0.0022 lr: 0.02
+2020-11-17 16:47:25 iteration: 84500 loss: 0.0021 lr: 0.02
+2020-11-17 16:48:44 iteration: 85000 loss: 0.0021 lr: 0.02
+2020-11-17 16:49:58 iteration: 85500 loss: 0.0020 lr: 0.02
+2020-11-17 16:51:12 iteration: 86000 loss: 0.0021 lr: 0.02
+2020-11-17 16:52:24 iteration: 86500 loss: 0.0022 lr: 0.02
+2020-11-17 16:53:32 iteration: 87000 loss: 0.0020 lr: 0.02
+2020-11-17 16:54:44 iteration: 87500 loss: 0.0021 lr: 0.02
+2020-11-17 16:56:00 iteration: 88000 loss: 0.0020 lr: 0.02
+2020-11-17 16:57:10 iteration: 88500 loss: 0.0020 lr: 0.02
+2020-11-17 16:58:21 iteration: 89000 loss: 0.0020 lr: 0.02
+2020-11-17 16:59:34 iteration: 89500 loss: 0.0018 lr: 0.02
+2020-11-17 17:00:44 iteration: 90000 loss: 0.0019 lr: 0.02
+2020-11-17 17:02:01 iteration: 90500 loss: 0.0019 lr: 0.02
+2020-11-17 17:03:16 iteration: 91000 loss: 0.0020 lr: 0.02
+2020-11-17 17:04:26 iteration: 91500 loss: 0.0019 lr: 0.02
+2020-11-17 17:05:37 iteration: 92000 loss: 0.0020 lr: 0.02
+2020-11-17 17:06:45 iteration: 92500 loss: 0.0021 lr: 0.02
+2020-11-17 17:08:00 iteration: 93000 loss: 0.0021 lr: 0.02
+2020-11-17 17:09:14 iteration: 93500 loss: 0.0019 lr: 0.02
+2020-11-17 17:10:22 iteration: 94000 loss: 0.0020 lr: 0.02
+2020-11-17 17:11:35 iteration: 94500 loss: 0.0018 lr: 0.02
+2020-11-17 17:12:44 iteration: 95000 loss: 0.0020 lr: 0.02
+2020-11-17 17:13:57 iteration: 95500 loss: 0.0020 lr: 0.02
+2020-11-17 17:15:07 iteration: 96000 loss: 0.0019 lr: 0.02
+2020-11-17 17:16:20 iteration: 96500 loss: 0.0020 lr: 0.02
+2020-11-17 17:17:28 iteration: 97000 loss: 0.0019 lr: 0.02
+2020-11-17 17:18:42 iteration: 97500 loss: 0.0020 lr: 0.02
+2020-11-17 17:19:56 iteration: 98000 loss: 0.0019 lr: 0.02
+2020-11-17 17:21:03 iteration: 98500 loss: 0.0019 lr: 0.02
+2020-11-17 17:22:14 iteration: 99000 loss: 0.0018 lr: 0.02
+2020-11-17 17:23:26 iteration: 99500 loss: 0.0019 lr: 0.02
+2020-11-17 17:24:42 iteration: 100000 loss: 0.0020 lr: 0.02
+2020-11-17 17:25:52 iteration: 100500 loss: 0.0020 lr: 0.02
+2020-11-17 17:27:02 iteration: 101000 loss: 0.0019 lr: 0.02
+2020-11-17 17:28:12 iteration: 101500 loss: 0.0020 lr: 0.02
+2020-11-17 17:29:23 iteration: 102000 loss: 0.0020 lr: 0.02
+2020-11-17 17:30:33 iteration: 102500 loss: 0.0018 lr: 0.02
+2020-11-17 17:31:39 iteration: 103000 loss: 0.0019 lr: 0.02
+2020-11-17 17:32:50 iteration: 103500 loss: 0.0019 lr: 0.02
+2020-11-17 17:34:03 iteration: 104000 loss: 0.0019 lr: 0.02
+2020-11-17 17:35:15 iteration: 104500 loss: 0.0019 lr: 0.02
+2020-11-17 17:36:24 iteration: 105000 loss: 0.0018 lr: 0.02
+2020-11-17 17:37:32 iteration: 105500 loss: 0.0019 lr: 0.02
+2020-11-17 17:38:42 iteration: 106000 loss: 0.0018 lr: 0.02
+2020-11-17 17:39:51 iteration: 106500 loss: 0.0021 lr: 0.02
+2020-11-17 17:41:02 iteration: 107000 loss: 0.0018 lr: 0.02
+2020-11-17 17:42:14 iteration: 107500 loss: 0.0020 lr: 0.02
+2020-11-17 17:43:23 iteration: 108000 loss: 0.0019 lr: 0.02
+2020-11-17 17:44:34 iteration: 108500 loss: 0.0017 lr: 0.02
+2020-11-17 17:45:42 iteration: 109000 loss: 0.0017 lr: 0.02
+2020-11-17 17:46:48 iteration: 109500 loss: 0.0017 lr: 0.02
+2020-11-17 17:47:57 iteration: 110000 loss: 0.0019 lr: 0.02
+2020-11-17 17:49:07 iteration: 110500 loss: 0.0019 lr: 0.02
+2020-11-17 17:50:17 iteration: 111000 loss: 0.0018 lr: 0.02
+2020-11-17 17:51:26 iteration: 111500 loss: 0.0023 lr: 0.02
+2020-11-17 17:52:34 iteration: 112000 loss: 0.0019 lr: 0.02
+2020-11-17 17:53:44 iteration: 112500 loss: 0.0019 lr: 0.02
+2020-11-17 17:54:50 iteration: 113000 loss: 0.0018 lr: 0.02
+2020-11-17 17:56:03 iteration: 113500 loss: 0.0019 lr: 0.02
+2020-11-17 17:57:13 iteration: 114000 loss: 0.0018 lr: 0.02
+2020-11-17 17:58:30 iteration: 114500 loss: 0.0018 lr: 0.02
+2020-11-17 17:59:39 iteration: 115000 loss: 0.0018 lr: 0.02
+2020-11-17 18:00:49 iteration: 115500 loss: 0.0018 lr: 0.02
+2020-11-17 18:01:56 iteration: 116000 loss: 0.0018 lr: 0.02
+2020-11-17 18:03:07 iteration: 116500 loss: 0.0019 lr: 0.02
+2020-11-17 18:04:16 iteration: 117000 loss: 0.0018 lr: 0.02
+2020-11-17 18:05:23 iteration: 117500 loss: 0.0019 lr: 0.02
+2020-11-17 18:06:32 iteration: 118000 loss: 0.0017 lr: 0.02
+2020-11-17 18:07:42 iteration: 118500 loss: 0.0017 lr: 0.02
+2020-11-17 18:08:54 iteration: 119000 loss: 0.0018 lr: 0.02
+2020-11-17 18:10:02 iteration: 119500 loss: 0.0018 lr: 0.02
+2020-11-17 18:11:10 iteration: 120000 loss: 0.0018 lr: 0.02
+2020-11-17 18:12:19 iteration: 120500 loss: 0.0018 lr: 0.02
+2020-11-17 18:13:31 iteration: 121000 loss: 0.0018 lr: 0.02
+2020-11-17 18:14:43 iteration: 121500 loss: 0.0017 lr: 0.02
+2020-11-17 18:15:53 iteration: 122000 loss: 0.0019 lr: 0.02
+2020-11-17 18:16:57 iteration: 122500 loss: 0.0018 lr: 0.02
+2020-11-17 18:18:04 iteration: 123000 loss: 0.0017 lr: 0.02
+2020-11-17 18:19:14 iteration: 123500 loss: 0.0018 lr: 0.02
+2020-11-17 18:20:21 iteration: 124000 loss: 0.0018 lr: 0.02
+2020-11-17 18:21:33 iteration: 124500 loss: 0.0019 lr: 0.02
+2020-11-17 18:22:40 iteration: 125000 loss: 0.0018 lr: 0.02
+2020-11-17 18:23:51 iteration: 125500 loss: 0.0018 lr: 0.02
+2020-11-17 18:24:58 iteration: 126000 loss: 0.0017 lr: 0.02
+2020-11-17 18:26:11 iteration: 126500 loss: 0.0017 lr: 0.02
+2020-11-17 18:27:24 iteration: 127000 loss: 0.0017 lr: 0.02
+2020-11-17 18:28:26 iteration: 127500 loss: 0.0018 lr: 0.02
+2020-11-17 18:29:35 iteration: 128000 loss: 0.0018 lr: 0.02
+2020-11-17 18:30:43 iteration: 128500 loss: 0.0017 lr: 0.02
+2020-11-17 18:31:51 iteration: 129000 loss: 0.0018 lr: 0.02
+2020-11-17 18:33:03 iteration: 129500 loss: 0.0019 lr: 0.02
+2020-11-17 18:34:09 iteration: 130000 loss: 0.0017 lr: 0.02
+2020-11-17 18:35:15 iteration: 130500 loss: 0.0019 lr: 0.02
+2020-11-17 18:36:23 iteration: 131000 loss: 0.0017 lr: 0.02
+2020-11-17 18:37:30 iteration: 131500 loss: 0.0019 lr: 0.02
+2020-11-17 18:38:38 iteration: 132000 loss: 0.0017 lr: 0.02
+2020-11-17 18:39:46 iteration: 132500 loss: 0.0018 lr: 0.02
+2020-11-17 18:40:55 iteration: 133000 loss: 0.0017 lr: 0.02
+2020-11-17 18:42:01 iteration: 133500 loss: 0.0018 lr: 0.02
+2020-11-17 18:43:12 iteration: 134000 loss: 0.0018 lr: 0.02
+2020-11-17 18:44:17 iteration: 134500 loss: 0.0016 lr: 0.02
+2020-11-17 18:45:25 iteration: 135000 loss: 0.0017 lr: 0.02
+2020-11-17 18:46:34 iteration: 135500 loss: 0.0017 lr: 0.02
+2020-11-17 18:47:42 iteration: 136000 loss: 0.0017 lr: 0.02
+2020-11-17 18:48:52 iteration: 136500 loss: 0.0016 lr: 0.02
+2020-11-17 18:50:01 iteration: 137000 loss: 0.0016 lr: 0.02
+2020-11-17 18:51:10 iteration: 137500 loss: 0.0017 lr: 0.02
+2020-11-17 18:52:14 iteration: 138000 loss: 0.0017 lr: 0.02
+2020-11-17 18:53:23 iteration: 138500 loss: 0.0017 lr: 0.02
+2020-11-17 18:54:31 iteration: 139000 loss: 0.0016 lr: 0.02
+2020-11-17 18:55:35 iteration: 139500 loss: 0.0018 lr: 0.02
+2020-11-17 18:56:44 iteration: 140000 loss: 0.0018 lr: 0.02
+2020-11-17 18:57:51 iteration: 140500 loss: 0.0017 lr: 0.02
+2020-11-17 18:58:57 iteration: 141000 loss: 0.0017 lr: 0.02
+2020-11-17 19:00:05 iteration: 141500 loss: 0.0018 lr: 0.02
+2020-11-17 19:01:13 iteration: 142000 loss: 0.0016 lr: 0.02
+2020-11-17 19:02:24 iteration: 142500 loss: 0.0017 lr: 0.02
+2020-11-17 19:03:29 iteration: 143000 loss: 0.0017 lr: 0.02
+2020-11-17 19:04:38 iteration: 143500 loss: 0.0018 lr: 0.02
+2020-11-17 19:05:45 iteration: 144000 loss: 0.0017 lr: 0.02
+2020-11-17 19:06:55 iteration: 144500 loss: 0.0017 lr: 0.02
+2020-11-17 19:08:05 iteration: 145000 loss: 0.0015 lr: 0.02
+2020-11-17 19:09:14 iteration: 145500 loss: 0.0018 lr: 0.02
+2020-11-17 19:10:22 iteration: 146000 loss: 0.0017 lr: 0.02
+2020-11-17 19:11:30 iteration: 146500 loss: 0.0017 lr: 0.02
+2020-11-17 19:12:40 iteration: 147000 loss: 0.0017 lr: 0.02
+2020-11-17 19:13:51 iteration: 147500 loss: 0.0018 lr: 0.02
+2020-11-17 19:15:04 iteration: 148000 loss: 0.0017 lr: 0.02
+2020-11-17 19:16:12 iteration: 148500 loss: 0.0017 lr: 0.02
+2020-11-17 19:17:18 iteration: 149000 loss: 0.0017 lr: 0.02
+2020-11-17 19:18:27 iteration: 149500 loss: 0.0017 lr: 0.02
+2020-11-17 19:19:37 iteration: 150000 loss: 0.0016 lr: 0.02
+2020-11-17 19:20:41 iteration: 150500 loss: 0.0015 lr: 0.02
+2020-11-17 19:22:05 iteration: 151000 loss: 0.0016 lr: 0.02
+2020-11-17 19:23:19 iteration: 151500 loss: 0.0016 lr: 0.02
+2020-11-17 19:24:24 iteration: 152000 loss: 0.0016 lr: 0.02
+2020-11-17 19:25:31 iteration: 152500 loss: 0.0016 lr: 0.02
+2020-11-17 19:26:38 iteration: 153000 loss: 0.0017 lr: 0.02
+2020-11-17 19:27:46 iteration: 153500 loss: 0.0015 lr: 0.02
+2020-11-17 19:28:57 iteration: 154000 loss: 0.0016 lr: 0.02
+2020-11-17 19:30:02 iteration: 154500 loss: 0.0016 lr: 0.02
+2020-11-17 19:31:11 iteration: 155000 loss: 0.0015 lr: 0.02
+2020-11-17 19:32:18 iteration: 155500 loss: 0.0017 lr: 0.02
+2020-11-17 19:33:23 iteration: 156000 loss: 0.0016 lr: 0.02
+2020-11-17 19:34:31 iteration: 156500 loss: 0.0015 lr: 0.02
+2020-11-17 19:35:35 iteration: 157000 loss: 0.0016 lr: 0.02
+2020-11-17 19:36:40 iteration: 157500 loss: 0.0016 lr: 0.02
+2020-11-17 19:37:46 iteration: 158000 loss: 0.0017 lr: 0.02
+2020-11-17 19:38:53 iteration: 158500 loss: 0.0017 lr: 0.02
+2020-11-17 19:40:00 iteration: 159000 loss: 0.0016 lr: 0.02
+2020-11-17 19:41:05 iteration: 159500 loss: 0.0017 lr: 0.02
+2020-11-17 19:42:14 iteration: 160000 loss: 0.0017 lr: 0.02
+2020-11-17 19:43:21 iteration: 160500 loss: 0.0016 lr: 0.02
+2020-11-17 19:44:26 iteration: 161000 loss: 0.0015 lr: 0.02
+2020-11-17 19:45:29 iteration: 161500 loss: 0.0016 lr: 0.02
+2020-11-17 19:46:38 iteration: 162000 loss: 0.0017 lr: 0.02
+2020-11-17 19:47:49 iteration: 162500 loss: 0.0016 lr: 0.02
+2020-11-17 19:48:55 iteration: 163000 loss: 0.0016 lr: 0.02
+2020-11-17 19:49:58 iteration: 163500 loss: 0.0016 lr: 0.02
+2020-11-17 19:51:04 iteration: 164000 loss: 0.0016 lr: 0.02
+2020-11-17 19:52:12 iteration: 164500 loss: 0.0016 lr: 0.02
+2020-11-17 19:53:17 iteration: 165000 loss: 0.0016 lr: 0.02
+2020-11-17 19:54:27 iteration: 165500 loss: 0.0016 lr: 0.02
+2020-11-17 19:55:31 iteration: 166000 loss: 0.0016 lr: 0.02
+2020-11-17 19:56:32 iteration: 166500 loss: 0.0015 lr: 0.02
+2020-11-17 19:57:38 iteration: 167000 loss: 0.0016 lr: 0.02
+2020-11-17 19:58:43 iteration: 167500 loss: 0.0016 lr: 0.02
+2020-11-17 19:59:51 iteration: 168000 loss: 0.0015 lr: 0.02
+2020-11-17 20:00:56 iteration: 168500 loss: 0.0016 lr: 0.02
+2020-11-17 20:02:02 iteration: 169000 loss: 0.0015 lr: 0.02
+2020-11-17 20:03:07 iteration: 169500 loss: 0.0016 lr: 0.02
+2020-11-17 20:04:13 iteration: 170000 loss: 0.0016 lr: 0.02
+2020-11-17 20:05:19 iteration: 170500 loss: 0.0016 lr: 0.02
+2020-11-17 20:06:22 iteration: 171000 loss: 0.0016 lr: 0.02
+2020-11-17 20:07:28 iteration: 171500 loss: 0.0016 lr: 0.02
+2020-11-17 20:08:36 iteration: 172000 loss: 0.0015 lr: 0.02
+2020-11-17 20:09:42 iteration: 172500 loss: 0.0016 lr: 0.02
+2020-11-17 20:10:51 iteration: 173000 loss: 0.0015 lr: 0.02
+2020-11-17 20:12:00 iteration: 173500 loss: 0.0015 lr: 0.02
+2020-11-17 20:13:04 iteration: 174000 loss: 0.0016 lr: 0.02
+2020-11-17 20:14:05 iteration: 174500 loss: 0.0015 lr: 0.02
+2020-11-17 20:15:13 iteration: 175000 loss: 0.0015 lr: 0.02
+2020-11-17 20:16:17 iteration: 175500 loss: 0.0015 lr: 0.02
+2020-11-17 20:17:22 iteration: 176000 loss: 0.0018 lr: 0.02
+2020-11-17 20:18:28 iteration: 176500 loss: 0.0017 lr: 0.02
+2020-11-17 20:19:29 iteration: 177000 loss: 0.0016 lr: 0.02
+2020-11-17 20:20:35 iteration: 177500 loss: 0.0016 lr: 0.02
+2020-11-17 20:21:41 iteration: 178000 loss: 0.0015 lr: 0.02
+2020-11-17 20:22:47 iteration: 178500 loss: 0.0016 lr: 0.02
+2020-11-17 20:23:52 iteration: 179000 loss: 0.0016 lr: 0.02
+2020-11-17 20:24:55 iteration: 179500 loss: 0.0016 lr: 0.02
+2020-11-17 20:26:00 iteration: 180000 loss: 0.0016 lr: 0.02
+2020-11-17 20:27:06 iteration: 180500 loss: 0.0016 lr: 0.02
+2020-11-17 20:28:14 iteration: 181000 loss: 0.0015 lr: 0.02
+2020-11-17 20:29:23 iteration: 181500 loss: 0.0015 lr: 0.02
+2020-11-17 20:30:27 iteration: 182000 loss: 0.0016 lr: 0.02
+2020-11-17 20:31:32 iteration: 182500 loss: 0.0015 lr: 0.02
+2020-11-17 20:32:34 iteration: 183000 loss: 0.0016 lr: 0.02
+2020-11-17 20:33:38 iteration: 183500 loss: 0.0016 lr: 0.02
+2020-11-17 20:34:42 iteration: 184000 loss: 0.0016 lr: 0.02
+2020-11-17 20:35:51 iteration: 184500 loss: 0.0015 lr: 0.02
+2020-11-17 20:36:56 iteration: 185000 loss: 0.0015 lr: 0.02
+2020-11-17 20:37:56 iteration: 185500 loss: 0.0016 lr: 0.02
+2020-11-17 20:39:03 iteration: 186000 loss: 0.0016 lr: 0.02
+2020-11-17 20:40:07 iteration: 186500 loss: 0.0016 lr: 0.02
+2020-11-17 20:41:13 iteration: 187000 loss: 0.0015 lr: 0.02
+2020-11-17 20:42:17 iteration: 187500 loss: 0.0015 lr: 0.02
+2020-11-17 20:43:24 iteration: 188000 loss: 0.0016 lr: 0.02
+2020-11-17 20:44:28 iteration: 188500 loss: 0.0016 lr: 0.02
+2020-11-17 20:45:32 iteration: 189000 loss: 0.0014 lr: 0.02
+2020-11-17 20:46:38 iteration: 189500 loss: 0.0015 lr: 0.02
+2020-11-17 20:47:43 iteration: 190000 loss: 0.0015 lr: 0.02
+2020-11-17 20:48:49 iteration: 190500 loss: 0.0015 lr: 0.02
+2020-11-17 20:49:54 iteration: 191000 loss: 0.0015 lr: 0.02
+2020-11-17 20:50:59 iteration: 191500 loss: 0.0016 lr: 0.02
+2020-11-17 20:52:05 iteration: 192000 loss: 0.0015 lr: 0.02
+2020-11-17 20:53:11 iteration: 192500 loss: 0.0014 lr: 0.02
+2020-11-17 20:54:20 iteration: 193000 loss: 0.0014 lr: 0.02
+2020-11-17 20:55:26 iteration: 193500 loss: 0.0015 lr: 0.02
+2020-11-17 20:56:31 iteration: 194000 loss: 0.0016 lr: 0.02
+2020-11-17 20:57:37 iteration: 194500 loss: 0.0015 lr: 0.02
+2020-11-17 20:58:45 iteration: 195000 loss: 0.0016 lr: 0.02
+2020-11-17 20:59:52 iteration: 195500 loss: 0.0016 lr: 0.02
+2020-11-17 21:00:57 iteration: 196000 loss: 0.0015 lr: 0.02
+2020-11-17 21:01:59 iteration: 196500 loss: 0.0014 lr: 0.02
+2020-11-17 21:03:05 iteration: 197000 loss: 0.0015 lr: 0.02
+2020-11-17 21:04:08 iteration: 197500 loss: 0.0015 lr: 0.02
+2020-11-17 21:05:15 iteration: 198000 loss: 0.0015 lr: 0.02
+2020-11-17 21:06:19 iteration: 198500 loss: 0.0015 lr: 0.02
+2020-11-17 21:07:26 iteration: 199000 loss: 0.0016 lr: 0.02
+2020-11-17 21:08:29 iteration: 199500 loss: 0.0015 lr: 0.02
+2020-11-17 21:09:32 iteration: 200000 loss: 0.0015 lr: 0.02
+2020-11-17 22:32:06 NumExpr defaulting to 8 threads.
+2020-11-17 22:32:06 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['eyes', 'swimbladder', 'midtail', 'endtail'],
+ 'batch_size': 1,
+ 'bottomheight': 400,
+ 'crop': True,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/attempt2_jamie95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'deconvolutionstride': 2,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/home/jamie/anaconda3/envs/DLC-GPU/lib/python3.7/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'leftwidth': 400,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/Documentation_data-attempt2_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'minsize': 100,
+ 'mirror': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'output_stride': 16,
+ 'pos_dist_thresh': 17,
+ 'project_path': '/home/jamie/attempt2-jamie-2020-11-02',
+ 'regularize': False,
+ 'rightwidth': 400,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/home/jamie/attempt2-jamie-2020-11-02/dlc-models/iteration-0/attempt2Nov2-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'topheight': 400,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2020-11-17 22:43:56 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['eyes', 'swimbladder', 'midtail', 'endtail'],
+ 'batch_size': 1,
+ 'bottomheight': 400,
+ 'crop': True,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/attempt2_jamie95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'deconvolutionstride': 2,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/home/jamie/anaconda3/envs/DLC-GPU/lib/python3.7/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'leftwidth': 400,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/Documentation_data-attempt2_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'minsize': 100,
+ 'mirror': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'output_stride': 16,
+ 'pos_dist_thresh': 17,
+ 'project_path': '/home/jamie/attempt2-jamie-2020-11-02',
+ 'regularize': False,
+ 'rightwidth': 400,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/home/jamie/attempt2-jamie-2020-11-02/dlc-models/iteration-0/attempt2Nov2-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'topheight': 400,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2020-11-17 22:44:22 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['eyes', 'swimbladder', 'midtail', 'endtail'],
+ 'batch_size': 8,
+ 'bottomheight': 400,
+ 'crop': True,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/attempt2_jamie95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'deconvolutionstride': 2,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/home/jamie/anaconda3/envs/DLC-GPU/lib/python3.7/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'leftwidth': 400,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/Documentation_data-attempt2_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'minsize': 100,
+ 'mirror': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'num_outputs': 1,
+ 'optimizer': 'sgd',
+ 'output_stride': 16,
+ 'pos_dist_thresh': 17,
+ 'project_path': '/home/jamie/attempt2-jamie-2020-11-02',
+ 'regularize': False,
+ 'rightwidth': 400,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/home/jamie/attempt2-jamie-2020-11-02/dlc-models/iteration-0/attempt2Nov2-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'topheight': 400,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2020-11-17 22:45:02 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['eyes', 'swimbladder', 'midtail', 'endtail'],
+ 'batch_size': 8,
+ 'bottomheight': 400,
+ 'crop': True,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/attempt2_jamie95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'deconvolutionstride': 2,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/home/jamie/anaconda3/envs/DLC-GPU/lib/python3.7/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'leftwidth': 400,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/Documentation_data-attempt2_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'minsize': 100,
+ 'mirror': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'num_outputs': 1,
+ 'optimizer': 'sgd',
+ 'output_stride': 16,
+ 'pos_dist_thresh': 17,
+ 'project_path': '/home/jamie/attempt2-jamie-2020-11-02',
+ 'regularize': False,
+ 'rightwidth': 400,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/home/jamie/attempt2-jamie-2020-11-02/dlc-models/iteration-0/attempt2Nov2-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'topheight': 400,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2020-11-17 23:26:17 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['eyes', 'swimbladder', 'midtail', 'endtail'],
+ 'batch_size': 8,
+ 'bottomheight': 400,
+ 'crop': True,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/attempt2_jamie95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'deconvolutionstride': 2,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/home/jamie/anaconda3/envs/DLC-GPU/lib/python3.7/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'leftwidth': 400,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_attempt2Nov2/Documentation_data-attempt2_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'minsize': 100,
+ 'mirror': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'num_outputs': 1,
+ 'optimizer': 'sgd',
+ 'output_stride': 16,
+ 'pos_dist_thresh': 17,
+ 'project_path': '/home/jamie/attempt2-jamie-2020-11-02',
+ 'regularize': False,
+ 'rightwidth': 400,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/home/jamie/attempt2-jamie-2020-11-02/dlc-models/iteration-0/attempt2Nov2-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'topheight': 400,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
