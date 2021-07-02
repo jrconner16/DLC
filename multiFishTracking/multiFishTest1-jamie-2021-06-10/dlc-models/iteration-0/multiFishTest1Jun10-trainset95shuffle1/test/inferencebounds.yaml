@@ -1,0 +1,30 @@
+'0_1':
+  intra_max: '3.0'
+  intra_min: '1.0'
+  inter_max: '149.0'
+  inter_min: '3.0'
+'1_2':
+  intra_max: '4.0'
+  intra_min: '1.0'
+  inter_max: '152.0'
+  inter_min: '1.0'
+'2_3':
+  intra_max: '4.0'
+  intra_min: '2.0'
+  inter_max: '153.0'
+  inter_min: '2.0'
+'0_3':
+  intra_max: '9.0'
+  intra_min: '1.0'
+  inter_max: '149.0'
+  inter_min: '1.0'
+'0_2':
+  intra_max: '6.0'
+  intra_min: '2.0'
+  inter_max: '151.0'
+  inter_min: '1.0'
+'1_3':
+  intra_max: '7.0'
+  intra_min: '2.0'
+  inter_max: '151.0'
+  inter_min: '1.0'

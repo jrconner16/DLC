@@ -5,13 +5,39 @@ date: Jun10
 multianimalproject: true
 
     # Project path (change when moving around)
-project_path: /home/jamie/multiFishTest1-jamie-2021-06-10
+project_path: /home/jamie/projects/deeplabcut/multiFishTracking/multiFishTest1-jamie-2021-06-10
 
     # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
   /home/jamie/multiFishTest1-jamie-2021-06-10/videos/WT_00590.mov:
     crop: 0, 1280, 0, 864
   /home/jamie/multiFish/WT_00595.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/multiFishTracking/multiFishTest1-jamie-2021-06-10/videos/00598_WT.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/multiFishTracking/multiFishTest1-jamie-2021-06-10/videos/00591_KO.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/multiFishTracking/multiFishTest1-jamie-2021-06-10/videos/00599_WT.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/multiFishTracking/multiFishTest1-jamie-2021-06-10/videos/00594_KO.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/multiFishTracking/multiFishTest1-jamie-2021-06-10/videos/00589_WT.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/multiFishTracking/multiFishTest1-jamie-2021-06-10/videos/00592_KO.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/multiFishTracking/multiFishTest1-jamie-2021-06-10/videos/00593_KO.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/multiFishTracking/multiFishTest1-jamie-2021-06-10/videos/00590_WT.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/multiFishTracking/multiFishTest1-jamie-2021-06-10/videos/00595_WT.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/multiFishTracking/multiFishTest1-jamie-2021-06-10/videos/00596_WT.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/june30/00705.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/june30/00706.mov:
+    crop: 0, 1280, 0, 864
+  /home/jamie/projects/deeplabcut/june30/00710.mov:
     crop: 0, 1280, 0, 864
 individuals:
 - fish1
@@ -30,6 +56,20 @@ individuals:
 - fish14
 - fish15
 - fish16
+- fish17
+- fish18
+- fish19
+- fish20
+- fish21
+- fish22
+- fish23
+- fish24
+- fish25
+- fish26
+- fish27
+- fish28
+- fish29
+- fish30
 uniquebodyparts: []
 multianimalbodyparts:
 - eyes
@@ -48,17 +88,16 @@ skeleton:
 - - eyes
   - midtail
 - - swimbladder
-- - endtail
+  - endtail
 bodyparts: MULTI!
 start: 0
 stop: 1
-numframes2pick: 20
-identidy: False
+numframes2pick: 5
 
     # Plotting configuration
 skeleton_color: black
-pcutoff: 0.6
-dotsize: 12
+pcutoff: 0.8
+dotsize: 4
 alphavalue: 0.7
 colormap: plasma
 
@@ -75,13 +114,14 @@ batch_size: 8
 cropping: false
 croppedtraining: false
     #if cropping is true for analysis, then set the values here:
-x1: 0
-x2: 640
-y1: 277
-y2: 624
+x1:
+x2:
+y1:
+y2:
 
     # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
 corner2move2:
 - 50
 - 50
 move2corner: true
+identidy: false
